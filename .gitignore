@@ -1,0 +1,42 @@
+# Gradle files
+.gradle/
+build/
+
+# Kotlin/Java (Generated)
+*.class
+*.dex
+*.pyc
+*.flat
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Local configuration
+local.properties
+google-services.json
+
+# Keystores / Secrets (NEVER COMMIT THESE)
+*.jks
+*.keystore
+*.p12
+*.key
+*.pem
+secrets.properties
+
+# Native / Binary (Generated)
+.externalNativeBuild/
+.cxx/
+*.so
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Captures
+captures/

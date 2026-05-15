@@ -1,0 +1,23 @@
+{
+  "rules": {
+    "routes": {
+      ".read": "auth != null",
+      ".write": false
+    },
+    "crowd_reports": {
+      "$routeId": {
+        ".read": "auth != null",
+        ".write": "auth != null",
+        "$reportId": {
+          ".validate": "newData.hasChildren(['status', 'timestamp', 'deviceId', 'lat', 'lng']) && newData.child('timestamp').val() <= now"
+        }
+      }
+    },
+    "alternatives": {
+      "$routeId": {
+        ".read": "auth != null",
+        ".write": false
+      }
+    }
+  }
+}
